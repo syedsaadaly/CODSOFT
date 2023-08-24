@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="calculator">
+        <form>
+            <input type="text" class="screen" readonly>
+        </form>
+        <div class="buttons">
+           
+            <button type="button" class="btn0" onclick="handleButtonClicked('*')">x</button>
+            <button type="button" class="btn0" onclick="handleButtonClicked('/')">/</button>
+            <button type="button" class="btn0" onclick="handleButtonClicked('-')">-</button>
+            <button type="button" class="btn0" onclick="handleButtonClicked('+')">+</button>
+
+            <button type="button" class="btn" onclick="handleButtonClicked('9')">9</button>
+            <button type="button" class="btn" onclick="handleButtonClicked('8')">8</button>
+            <button type="button" class="btn" onclick="handleButtonClicked('7')">7</button>
+            <button type="button" class="btn" onclick="handleButtonClicked('6')">6</button>
+            <button type="button" class="btn" onclick="handleButtonClicked('5')">5</button>
+            <button type="button" class="btn" onclick="handleButtonClicked('4')">4</button>
+            <button type="button" class="btn" onclick="handleButtonClicked('3')">3</button>
+            <button type="button" class="btn" onclick="handleButtonClicked('2')">2</button>
+            <button type="button" class="btn" onclick="handleButtonClicked('1')">1</button>
+            <button type="button" class="btn" onclick="handleButtonClicked('0')">0</button>
+            <button type="button" class="btn" onclick="handleButtonClicked('.')">.</button>
+
+            <button type="button" class="btn btn-equal" onclick="calculateResult()">=</button>
+            <button type="button" class="btn btn-clear" onclick="clearScreen()">C</button>
+        </div>
+    </section>
+    <script src="style.js"></script>
+</body>
+</html>

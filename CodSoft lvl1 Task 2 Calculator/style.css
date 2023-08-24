@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Josefin+Sans:wght@200&family=Open+Sans&family=Playfair+Display:wght@400;500;700&family=Ubuntu:ital,wght@1,500&display=swap');
+
+body {
+    
+    background-color: rgb(142, 178, 233);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculator {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(105, 157, 235);
+    box-shadow: 4px 4px 30px black;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+.btn0{
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    color: white;
+    background-color: rgb(28, 57, 153);
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+    box-shadow: 1px 1px 3px;
+    font-family: 'Great Vibes', cursive;
+}
+.btn {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    color: white;
+    background-color: rgb(74, 104, 201);
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+    box-shadow: 1px 1px 3px;
+}
+.btn:hover {
+    background-color: black;
+}
+.btn-equal {
+    grid-column: span 2;
+    background-color: #fa983a;
+    color: white;
+}
+.btn-clear {
+    background-color: #e74c3c;
+    color: white;
+}
+.screen {
+    width: 94%;
+    padding: 9px;
+    font-size: 1.5rem;
+    text-align: right;
+    padding-top: 21px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    font-family: 'Great Vibes', cursive;
+}
